@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase6 - Tablas</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tablas</h1>
+    <table>
+        <tr>
+            <th>Titulo 1</th> <!-- Para titulos-->
+            <th colspan="2">Titulo 2</th>
+        </tr>
+        <tr>
+            <!-- Fila -->
+            <td>Fila 1</td> <!-- celdas -->
+            <td>Celda</td>
+            <td>Celda</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Titulo 3</th>
+            <td>FilaExtra</td>
+            <td>FilaExtra</td>
+        </tr>
+        <tr>
+            <td colspan="3">Fila 2</td>
+        </tr>
+        <tr>
+            <td>Fila 3</td>
+            <td>Fila 3</td>
+            <td>Fila 3</td>
+        </tr>
+    </table>
+    <hr>
+    <Table>
+        <thead>
+            <!-- Indica que son titulos y los pondra hasta arriba-->
+            <tr>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Indica que es el cuerpo de las tablas-->
+            <tr>
+                <td>Celda</td>
+                <td>Celda</td>
+                <td>Celda</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- Indica que es el footer de la tabla-->
+            <tr>
+                <td>Celda</td>
+                <td>Celda</td>
+                <td>Celda</td>
+            </tr>
+        </tfoot>
+    </Table>
+</body>
+
+</html>

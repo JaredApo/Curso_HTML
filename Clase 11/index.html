@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 11 - Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <form action="">
+        <input type="text" name="nombre" id="nombre">
+        <label for="nombre">Nombre</label> <br>
+        <input type="text" name="nombre" id="apellido">
+        <label for="apellido">Apellido</label><br> <br>
+
+        <label for="kong">Team kong</label> <!-- El nombre del id debe ser el mismo que ponemos en el del for-->
+        <input type="radio" name="team" id="kong"> <!-- El name se utiliza para que solo podemos seleccionar uno-->
+        <label for="godzilla">Team Godzilla</label>
+        <input type="radio" name="team" id="godzilla">
+        <label for="otros">Otros</label>
+        <input type="radio" name="team" id="otros"><br> <br>
+
+        <input type="checkbox" name="entretenimiento" id="reptiliano">
+        <label for="reptiliano">Eres reptiliano</label>
+        <input type="checkbox" name="entretenimiento" id="bot">
+        <label for="bot">Eres un bot</label>
+        <input type="checkbox" name="entretenimiento" id="humano">
+        <label for="humano">Eres humano</label> <br> <br>
+
+        <input type="submit" value="submit"> <!-- Envia los datos-->
+    </form>
+</body>
+
+</html>

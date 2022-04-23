@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 12 - Formularios 2</title>
+</head>
+
+<body>
+    <h1>Formularios 2</h1>
+    <form action="" autocomplete="on">
+
+        <fieldset> <!-- Sirve para decirle al navegador que unas etiquetas son de un mismo grupo-->
+            <input type="text" name="nombre" id="nombre" placeholder="Pedro" readonly autofocus>
+            <label for="nombre">Nombre</label> <br>
+            <input type="text" name="nombre" id="apellido" placeholder="PicaPiedra" disabled>
+            <label for="apellido">Apellido</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Que team eres?</legend>
+            <label for="kong">Team kong</label> <!-- El nombre del id debe ser el mismo que ponemos en el del for-->
+            <input type="radio" name="team" id="kong" checked>
+            <!-- El name se utiliza para que solo podemos seleccionar uno-->
+            <label for="godzilla">Team Godzilla</label>
+            <input type="radio" name="team" id="godzilla">
+            <label for="otros">Otros</label>
+            <input type="radio" name="team" id="otros" disabled>
+        </fieldset>
+
+        <fieldset>
+            <legend>Que eres?</legend>
+            <input type="checkbox" name="entretenimiento" id="reptiliano" checked>
+            <label for="reptiliano">Eres reptiliano</label>
+            <input type="checkbox" name="entretenimiento" id="bot" checked>
+            <label for="bot">Eres un bot</label>
+            <input type="checkbox" name="entretenimiento" id="humano">
+            <label for="humano">Eres humano</label>
+        </fieldset>
+
+        <fieldset>
+            <select name="pais" id="pais" size="2" multiple>
+                <!-- Recomendacion: Poner el mismo texto en id y en name-->
+                <option value="Mexico">Mexico</option>
+                <!-- Recomendacion: poner casi siempre el mismo texto en el value que en el texto que mostramos-->
+                <option value="Guatemala">Guatemala</option>
+                <option value="Chile">Chile</option>
+                <option value="Argentina" selected>Argentina</option>
+                <option value="Chile">Peru</option>
+                <option value="Chile">Brasil</option>
+                <option value="Chile">Uruguay</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tipo</legend>
+            <label for="buscar">Busca tu informacion</label>
+            <input type="text" name="buscar" id="buscar" list="tipos">
+            <datalist id="tipos">
+                <option value="Perro"></option>
+                <option value="Gato"></option>
+                <option value="Gallo"></option>
+                <option value="Caballo"></option>
+                <option value="Pollito"></option>
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <input type="range" name="" id="" value="150" min="0" max="300">
+        </fieldset>
+
+        <textarea name="texto" id="texto" cols="40" rows="10" placeholder="Escribe tu mensaje" required></textarea> <br> <br>
+
+        <input type="submit" value="submit"> <!-- Envia los datos-->
+    </form>
+</body>
+
+</html>
